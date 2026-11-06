@@ -1,0 +1,850 @@
+@font-face {
+    font-family: "comicbody";
+    src: url(fonts/ComicChuck.ttf);
+}
+
+@font-face {
+    font-family: "titling";
+    src: url(fonts/Super\ Squad.ttf);
+}
+
+@font-face {
+    font-family: "sansy";
+    src: url(fonts/ZTNature-Medium.ttf);
+}
+
+@font-face {
+    font-family: "boom";
+    src: url(fonts/KaBlam.ttf);
+}
+
+container {
+    margin: 0;
+    text-align: center;
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(5px) scale(0.6);
+    }
+    60% {
+        opacity: 1;
+
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.a {
+    animation: fadeUp both;
+    animation-timeline: view(10% 5%);
+}
+
+.b {
+    animation: fadeUp both;
+    animation-timeline: view(10% 5%);
+}
+
+.c {
+    animation: fadeUp both;
+    animation-timeline: view(10% 5%);
+    animation-range: 0% cover 40%;
+}
+
+.d {
+    animation: fadeUp both;
+    animation-timeline: view(10% 5%);
+    animation-range: 10% cover 50%;
+}
+
+.e {
+    animation: fadeUp both;
+    animation-timeline: view(10% 5%);
+    animation-range: 20% cover 60%;
+}
+
+.dialogue1 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 350px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 50px;
+}
+
+.dialogue1:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+
+}
+
+.dialogue2 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 450px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 350px;
+    transition: .3s ease;
+}
+
+.dialogue2:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+
+}
+
+.dialogue3 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 550px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 150px;
+    transition: .3s ease;
+}
+
+.dialogue3:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+
+}
+
+.dialogue4 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 350px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 350px;
+    transition: .3s ease;
+}
+
+.dialogue4:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue5 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 350px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+}
+
+.dialogue5:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue6 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 420px;
+    margin-top: 560px;
+    width: 325px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+}
+
+.dialogue6:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+
+.dialogue8 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 930px;
+    width: 100px;
+    margin-top: 600px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+}
+
+.dialogue8:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue9 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 225px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 400px;
+    transition: .3s ease;
+    rotate: -3deg;
+}
+.dialogue9:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue10 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 825px;
+    width: 275px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 575px;
+    transition: .3s ease;
+    rotate: 4deg;
+}
+
+.dialogue10:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue11 {
+    font-family: "comicbody";
+    font-size: 22.5px;
+    display: grid;
+    margin-left: 800px;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    width: 275px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 900px;
+    transition: .3s ease;
+}
+
+.dialogue11:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue12 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 300px;
+    width: 350px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 1250px;
+    transition: .3s ease;
+    rotate: -3deg;
+}
+
+.dialogue12:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue13 {
+    font-family: "comicbody";
+    font-size: 40px;
+    display: grid;
+    margin-left: 50vh;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    width: 550px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    align-items: center;
+}
+
+.dialogue13:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue14 {
+    font-family: "comicbody";
+    font-size: 25px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 45vw;
+    width: 75px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 425px;
+}
+
+.dialogue14:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue15 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 360px;
+    width: 250px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top:450px;
+}
+
+.dialogue15:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue16 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-left: 860px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 475px;
+}
+.dialogue16:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue17 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 20px;
+    margin-left: 325px;
+    width: 310px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 550px;
+}
+
+.dialogue17:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue18 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 825px;
+    width: 290px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 575px;
+}
+
+.dialogue18:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue19 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    width: 225px;
+    margin-top: -200px;
+    margin-left: 365px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    z-index: 99;
+}
+
+.dialogue19:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue20 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    width: 100px;
+    margin-top: -125px;
+    margin-left: 905px;
+    z-index: 99;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+}
+.dialogue20:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue21 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 850px;
+    width: 290px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 225px;
+}
+
+.dialogue21:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue22 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 39vw;
+    width: 290px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 350px;
+}
+
+.dialogue22:hover {
+    transform: scale(1.1);
+ 
+    transition: .5s ease;
+}
+.dialogue23 {
+    font-family: "comicbody";
+    font-size: 30px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 20px;
+    margin-left: 350px;
+    width: 270px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 225px;
+}
+
+.dialogue23:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.ugh {
+    font-family: "boom";
+    font-size: 140px;
+    position: absolute;
+    margin-left: 510px;
+    margin-top: 390px;
+    -webkit-text-stroke: black 6px;
+    color: white;
+    letter-spacing: 5px;
+    transition: .5s ease;
+}
+
+.ugh:hover {
+    transform: scale(1.2);
+    transition: .5s ease;
+}
+
+.dialogue24 {
+    font-family: "comicbody";
+    font-size: 24px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 30px;
+    margin-left: 325px;
+    width: 290px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 225px;
+}
+
+.dialogue24:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue25 {
+    font-family: "comicbody";
+    font-size: 20px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 420px;
+    width: 290px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 665px;
+}
+
+.dialogue25:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue26 {
+    font-family: "comicbody";
+    font-size: 23px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 930px;
+    width: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 375px;
+    z-index: 90;
+}
+
+.dialogue26:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue27 {
+    font-family: "comicbody";
+    font-size: 22.5px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 41vw;
+    width: 225px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 475px;
+}
+
+.dialogue27:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.dialogue28 {
+    font-family: "comicbody";
+    font-size: 25px;
+    display: grid;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 20px 15px;
+    margin-left: 44vw;
+    width: 150px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: .3s ease;
+    margin-top: 325px;
+}
+
+.dialogue28:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    align-content: center;
+    
+
+}
+
+
+
+html {
+    overflow: scroll;
+    overscroll-behavior: none;    
+}
+
+img {
+    align-items: center;
+}
+
+.cards {
+    width: 13%;
+    padding-bottom: 75px;
+    transition: 0.7s ease;
+    height: auto;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 700px;
+    transform: rotate(-7deg);
+}
+.cards:hover {
+    width: 20%;
+    transform: rotate(3deg);
+    transition: 0.7s ease;
+    margin-left: -100px;
+    margin-top: 650px;
+}
+
+.righty {
+    position: absolute;    
+    margin: 0;
+    margin-top: 100px;
+    z-index: 100;
+}
+
+.sus {
+    width: 900px;
+}
+
+.sus:hover {
+    content: url(panels/4b.png);
+    cursor: url(panels/cursorsus.png), auto;
+    margin-bottom: 2.5px;
+}
+
+headme {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 130px 50px;
+    margin-bottom: 100px;
+}
+
+.title {
+    font-family: "titling";
+    font-size: 150px;
+    line-height: 200px;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+
+}
+
+.base {
+    font-family: "sansy";
+    margin-top: 50px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+boo {
+    color: white;
+    transition: 1.2s ease;
+}
+
+boo:hover {
+    color:#E11A14;
+    transition: 1.2s ease;
+}
+
+
+end {
+    font-family: "comicbody";
+    font-size: 75px;
+    padding: 150px;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    color: white;
+    margin-top: 225px;
+    padding-bottom: 10px;
+}
+
+.sideme {
+    margin: 150px 0px;
+}
+
+
+#progress {
+    position:fixed;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    z-index: 9999;
+    transform-origin:0 50% ;
+    animation: growProgress linear;
+    animation-timeline: scroll();
+}
+
+@keyframes growProgress {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.shadow {
+    position: absolute;
+    height: 300px;
+    margin-top: 320px;
+    margin-left: 0px;
+    opacity: .8;
+    z-index: -10;
+    animation: fadeUps both;
+    animation-timeline: view(10% 5%);
+    animation-range: 20% cover 80%;
+}
+
+@keyframes fadeUps {
+    from {
+        opacity: 0;
+        transform: translateY(5px) scale(0.6);
+    }
+    60% {
+        opacity: .8;
+
+    }
+    to {
+        opacity: .8;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@font-face {
+    font-family: "footer";
+    src: url(fonts/Coolvetica\ Rg.otf);
+}
+
+
+footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 125px;
+    font-family: 'footer';
+    font-size: 20px;
+}
+
+.knock {
+    font-family: "boom";
+    font-size: 140px;
+    position: absolute;
+    margin-left: 520px;
+    margin-top: 390px;
+    -webkit-text-stroke: black 6px;
+    color: white;
+    letter-spacing: 7px;
+    transition: .5s ease;
+    z-index: 99;
+
+}
+
+.knock:hover {
+    transform: scale(1.5);
+    transition: .5s ease;
+    rotate: 3deg;
+}
